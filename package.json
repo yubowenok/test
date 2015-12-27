@@ -22,6 +22,7 @@
     "gulp": "^3.9.0",
     "gulp-scss-lint": "^0.3.8",
     "gulp-scss-lint-stylish2": "^2.0.2",
+    "gulp-util": "^3.0.7",
     "require-dir": "^0.3.0"
   }
 }

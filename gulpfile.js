@@ -4,6 +4,6 @@ var paths = require('./gulp/paths.js');
 
 requireDir('./gulp', {recurse: true});
 
-gulp.task('test', ['lint-scss']);
+gulp.task('test', ['lint']);
 
-gulp.task('default', ['lint-scss']);
+gulp.task('default', ['lint']);
