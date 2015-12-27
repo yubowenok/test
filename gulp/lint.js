@@ -16,11 +16,10 @@ gulp.task('lint-scss', function(cb) {
 
   return gulp.src(paths.scss)
     .pipe(scsslint({
-      customReport: reporterWrapper
-    }).on('error', function(err) {
-      cb(err);
+      customReport: reporter.issues
     }))
-    .pipe(reporter.printSummary);
+    .pipe(reporter.printSummary)
+    .pipe(scsslint.failReporter());
 });
 
 gulp.task('lint', ['lint-scss']);
