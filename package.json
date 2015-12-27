@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "prestart": "npm install",
+    "pretest": "npm install",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yubowenok/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yubowenok/test/issues"
+  },
+  "homepage": "https://github.com/yubowenok/test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-scss-lint": "^0.3.8",
+    "gulp-scss-lint-stylish2": "^2.0.2",
+    "require-dir": "^0.3.0"
+  }
+}
