@@ -15,6 +15,8 @@ before_script:
   - sudo service mongod status
 
 script:
-  - mongo genotet --eval 'db.createCollection("uploadProgress"); db.uploadProgress.insert({x: 1}); db.uploadProgress.find({x: 1});'
+  - mongo genotet --eval 'db.createCollection("uploadProgress");'
+  - mongo genotet --eval 'db.uploadProgress.insert({"x": 1});'
+  - mongo genotet --eval 'db.uploadProgress.find({"x": 1});'
 
 
