@@ -19,6 +19,7 @@ before_install:
 
 before_script:
   - rvm install ruby-2.2.3
+  - gem install scss_lint
 
 script:
   - mongo genotet < mongo_init.js
